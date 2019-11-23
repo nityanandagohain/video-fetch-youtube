@@ -5,9 +5,9 @@
 * `pip install -r requirements.txt`
 * ADD api key to `.bashrc` => `export YOUTUBE_KEY='your api key'`
 * migrate `python manage.py migrate`
-* start server `python manage.py runserver`
 * create a admin `python manage.py createsuperuser`
-* In a new terminal `python manage.py process_tasks`
+* start server `python manage.py runserver`
+* In a **new** terminal `python manage.py process_tasks`
     
     ![](assets/start.png)
 
