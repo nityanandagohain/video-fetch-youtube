@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'background_task'
+    'background_task',
+    'youtube_api_fetcher'
 ]
 
 MIDDLEWARE = [
