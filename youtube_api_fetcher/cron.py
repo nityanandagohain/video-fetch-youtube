@@ -19,8 +19,11 @@ def fetch_from_youtube():
     # send request to the youtube API
     url = "https://www.googleapis.com/youtube/v3/search"    
     querystring = {"key": os.environ.get("YOUTUBE_KEY"),"part":"snippet","type":"video","q":"football", "publishedAfter": time, "maxResults": 50}
-    response = requests.request("GET", url, params=querystring)
-    res = json.loads(response.text)
+    try:
+        response = requests.request("GET", url, params=querystring)
+        res = json.loads(response.text)
+    except:
+        print("Error while fetching from youtube API")
 
     # iterate though the results from the API
     for video in res["items"]:
